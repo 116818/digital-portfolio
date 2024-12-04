@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teboho Maseko - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="video-header">
+        <!-- Video Background -->
+        <video autoplay muted loop class="background-video">
+            <source src="images/MySiteVid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Content Above Video -->
+        <div class="header-content text-center">
+            <h1 class="text-white">Teboho Maseko</h1>
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand text-white" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header> 
+    <hr class="custom-hr"> 
+    <img src="images/Teboho.JPG" alt="Teboho Maseko" class="img-fluid profile-pic">
+    <hr class="custom-hr">
+    <div class="container my-5">
+            <!-- About Me Section -->
+ <section id="about" class="my-5">
+    <h2 class="text-center">About Me</h2>
+    <p class="text-justify">
+        I am a passionate developer with skills in end-user computing and system development. I enjoy creating functional and user-friendly applications. 
+        I have good skills and knowledge in Microsoft applications, and I am currently studying towards Cybersecurity.
+    </p>
+    <p class="text-justify">
+        In high school, I studied commerce, and this is when I realized that I can adapt to change. For example, our school introduced a new system where 
+        they assigned a stream to each student from grade 9 to grade 10. I completed my matric in 2022 and passed well. Now, I am focusing on two fields: 
+        Information Technology and Accounting Science, which will challenge me and keep me sharp.
+    </p>
+        <!-- About Me Image -->
+        <img src="images/Team.jpg" alt="Teboho Maseko" class="about-img">
+    </div>
+</section>
+<hr class="custom-hr">
+ <!-- Projects Section -->
+ <section id="projects" class="my-5">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+        <!-- End-User Computing Project -->
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">End-user Computing</h5>
+                    <p class="card-text">Skilled in various Microsoft applications, including:</p>
+                    <ul>
+                        <li>Microsoft Word: Document creation and formatting</li>
+                        <li>Microsoft Excel: Data analysis, formulas, and pivot tables</li>
+                        <li>Microsoft PowerPoint: Creating engaging presentations</li>
+                        <li>Microsoft Access: Database management and report generation</li>
+                    </ul>
+                    <a href="link1" class="btn btn-primary mb-2">View Project Word</a>
+                    <a href="link2" class="btn btn-primary mb-2">View Project Excel</a>
+                    <a href="link3" class="btn btn-primary mb-2">View Project PowerPoint</a>
+                </div>
+            </div>
+            <img src="images/Apps.jpg" alt="Teboho Maseko" class="img-fluid profile-pic">
+        </div>
+        <!-- System Development Project -->
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">System Development</h5>
+                    <p class="card-text">
+                        I have learned many basics of coding but have gained more experience through practicals, especially in HTML.
+                    </p>
+                    <ul>
+                        <li>Creating a personal webpage to showcase my skills and experiences.</li>
+                        <li>Building a simple landing page for a fictional product.</li>
+                        <li>Developing a basic HTML form for user input.</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="images/giphy.gif" alt="Teboho Maseko" class="img-fluid profile-pic">
+        </div>
+    </div>
+</section>
+<hr class="custom-hr">
+</div>
+<Section>
+        <!-- Contact Section -->
+        <section id="contact" class="my-5">
+            <h2 class="text-center">Contact Me</h2>
+            <form method="POST" action="submit_form.php">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </section>
+    </div>
+    <div class="card-body">
+        <p><strong>Email:</strong> tebohomaseko181@gmail.com</p>
+        <p><strong>Phone:</strong> +27 65 567 2320</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/teboho-maseko-0152722a2</a></p>
+    </div>
+    <!-- Image After Contact Section -->
+    <div class="text-center my-5">
+    <img src="images/Snip.21.jpeg" alt="Your Image" class="profile-image">
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Teboho Maseko</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
