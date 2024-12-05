@@ -350,3 +350,93 @@ body, html {
 
     .profile-img {
         width: 
+/* General body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: thin;
+}
+
+/* Navigation Links on Hover */
+.nav-item a:hover {
+    color: #f8f9fa;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hide hamburger on larger screens */
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none; /* Hide the navbar links initially */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust for fixed navbar */
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar-nav.show {
+        display: flex; /* Show navbar links when the class 'show' is added */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0; /* Add margin for vertical spacing */
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on smaller screens */
+    }
+}
+
+        // JavaScript to toggle the visibility of the navigation links
+        document.getElementById('hamburger-icon').addEventListener('click', function() {
+            const navbarLinks = document.getElementById('navbar-links');
+            navbarLinks.classList.toggle('show'); // Toggle 'show' class to show/hide navbar
+        });        
